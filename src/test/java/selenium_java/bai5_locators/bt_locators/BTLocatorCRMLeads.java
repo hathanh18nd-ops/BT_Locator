@@ -65,7 +65,11 @@ public class BTLocatorCRMLeads {
     String buttonNext = "//div[@id='leads_paginate']//a[text()='Next']";
     //locator for Add New Lead
     String headAddNewLead = "//h4[normalize-space()='Add new lead']";
-
+    String inputStatus = "//input[@id='new_status_name']";
+    String inputSearchStatus = "//form/div[1]/div[3]/div[1]/div/div/div[1]/div/div[1]/input";
+    String inputSource = "//input[@id='new_source_name']";
+    String inputSearchSource = "//form/div[1]/div[3]/div[2]/div/div/div[1]/div/div[1]/input";
+    String inputSearchAssigned = "//form/div[1]/div[3]/div[3]/div/div/div[1]/div/div[1]/input";
     String labelTag = "//label[@for='tags']";
     String inputTag = "//input[@id='tags']";
     String inputName = "//form[@id='lead_form']//input[@id='name']";

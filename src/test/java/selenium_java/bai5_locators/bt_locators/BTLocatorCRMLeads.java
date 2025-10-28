@@ -63,4 +63,27 @@ public class BTLocatorCRMLeads {
     String buttonPrevious = "//div[@id='leads_paginate']//a[normalize-space()='Previous']";
     String buttonNumber = "//div[@id='leads_paginate']/ul/li[2]/a";
     String buttonNext = "//div[@id='leads_paginate']//a[text()='Next']";
+    //locator for Add New Lead
+    String headAddNewLead = "//h4[normalize-space()='Add new lead']";
+
+    String labelTag = "//label[@for='tags']";
+    String inputTag = "//input[@id='tags']";
+    String inputName = "//form[@id='lead_form']//input[@id='name']";
+    String inputPosition = "//form[@id='lead_form']//input[@id='title']";
+    String inputEmailAddress = "//form[@id='lead_form']//input[@id='email']";
+    String inputWebsite = "//form[@id='lead_form']//input[@id='website']";
+    String inputPhone = "//form[@id='lead_form']//input[@id='phonenumber']";
+    String inputLeadValue = "//form[@id='lead_form']//input[@type='number' and @name='lead_value']";
+    String inputCompany = "//form[@id='lead_form']//input[@id='company']";
+    String inputAddress = "//textarea[@id='address']";
+    String inputCity = "//input[@id='city']";
+    String inputState = "//input[@id='state']";
+    String inputCountry = "//form[@id='lead_form']/div[1]/div[3]/div[8]/div[4]//input[@type='search' and @role='combobox']";
+    String inputZipCode = "//input[@id='zip']";
+    String inputDefaultLanguage = "//form[@id='lead_form']/div[1]/div[3]/div[8]/div[6]//input[@type='search' and @role='combobox']";
+    String inputDescription = "//textarea[@id='description']";
+    String checkboxPublic = "//input[@id='lead_public']";
+    String checkboxContactedToday = "//input[@id='contacted_today']";
+    String buttonClose = "//form[@id='lead_form']/div[2]/button[normalize-space()='Close']";
+    String buttonSave = "//form[@id='lead_form']/div[2]/button[normalize-space()='Save']";
 }

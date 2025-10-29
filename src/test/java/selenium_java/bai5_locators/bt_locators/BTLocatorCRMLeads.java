@@ -22,17 +22,13 @@ public class BTLocatorCRMLeads {
     String buttonLeadSummary = "//a[@data-title='Leads Summary']";
     String headerLeadsSummary = "//h4[normalize-space()='Leads Summary']";
     String labelActive = "//span[normalize-space()='Active']";
-    String labelActiveNumber = "//div[@id='wrapper']/div/div/div/div[1]/div[3]/div/div[1]/span[1]";
-    //String labelActiveNumber = "//span[normalize-space()='Active']/preceding-sibling::span";
+    String labelActiveNumber = "//span[normalize-space()='Active']/preceding-sibling::span";
     String labelJjjj = "//span[normalize-space()='jjjj']";
-    String labelJjjjNumber = "////div[@id='wrapper']/div/div/div/div[1]/div[3]/div/div[2]/span[1]";
-    //String labelJjjjNumber = "//span[normalize-space()='jjjj']/preceding-sibling::span";
+    String labelJjjjNumber = "//span[normalize-space()='jjjj']/preceding-sibling::span";
     String labelCustomer = "//span[normalize-space()='Customer']";
-    String labelCustomerNumber = "////div[@id='wrapper']/div/div/div/div[1]/div[3]/div/div[3]/span[1]";
-    //String labelCustomerNumber = "//div[@style='display: block;']/descendant::span[normalize-space()='Customer']/preceding-sibling::span";
+    String labelCustomerNumber = "//div[@style='display: block;']/descendant::span[normalize-space()='Customer']/preceding-sibling::span";
     String labelLostLeads = "//span[normalize-space()='Lost Leads']";
-    String labelLostLeadsNumber = "////div[@id='wrapper']/div/div/div/div[1]/div[3]/div/div[4]/span[1]";
-    //String labelLostLeadsNumber = "//div[@style='display: block;']/descendant::span[normalize-space()='Lost Leads']/preceding-sibling::span";
+    String labelLostLeadsNumber = "//div[@style='display: block;']/descendant::span[normalize-space()='Lost Leads']/preceding-sibling::span/descendant::span";
     String buttonLeadKanban = "//a[@data-title='Switch to Kanban']";
     String inputSearchLead = "//div[@id='leads_filter']//input[@type='search']";
     String inputLeadLength = "//div[@id='leads_length']//select[@name='leads_length']";
@@ -66,10 +62,10 @@ public class BTLocatorCRMLeads {
     //locator for Add New Lead
     String headAddNewLead = "//h4[normalize-space()='Add new lead']";
     String inputStatus = "//input[@id='new_status_name']";
-    String inputSearchStatus = "//form/div[1]/div[3]/div[1]/div/div/div[1]/div/div[1]/input";
+    String inputSearchStatus = "//button[@data-id='status']/following-sibling::div/descendant::input";
     String inputSource = "//input[@id='new_source_name']";
-    String inputSearchSource = "//form/div[1]/div[3]/div[2]/div/div/div[1]/div/div[1]/input";
-    String inputSearchAssigned = "//form/div[1]/div[3]/div[3]/div/div/div[1]/div/div[1]/input";
+    String inputSearchSource = "//button[@data-id='source']/following-sibling::div/descendant::input";
+    String inputSearchAssigned = "//button[@data-id='assigned']/following-sibling::div/descendant::input";
     String labelTag = "//label[@for='tags']";
     String inputTag = "//input[@id='tags']";
     String inputName = "//form[@id='lead_form']//input[@id='name']";
@@ -82,9 +78,9 @@ public class BTLocatorCRMLeads {
     String inputAddress = "//textarea[@id='address']";
     String inputCity = "//input[@id='city']";
     String inputState = "//input[@id='state']";
-    String inputCountry = "//form[@id='lead_form']/div[1]/div[3]/div[8]/div[4]//input[@type='search' and @role='combobox']";
+    String inputCountry = "//button[@data-id='country']/following-sibling::div/descendant::input";
     String inputZipCode = "//input[@id='zip']";
-    String inputDefaultLanguage = "//form[@id='lead_form']/div[1]/div[3]/div[8]/div[6]//input[@type='search' and @role='combobox']";
+    String inputDefaultLanguage = "//button[@data-id='default_language']/following-sibling::div/descendant::input";
     String inputDescription = "//textarea[@id='description']";
     String checkboxPublic = "//input[@id='lead_public']";
     String checkboxContactedToday = "//input[@id='contacted_today']";
